@@ -1,0 +1,7 @@
+<h1>{{message}}</h1>
+<ui-select ng-model="selected" theme="selectize" style="width: 300px;" title="Choose a country">
+	<ui-select-match placeholder="Search for website">{{$select.selected.url}}</ui-select-match>
+	<ui-select-choices repeat="website in websites | urlFilter: {url: $select.search}">
+	  <span ng-bind-html="website.url | highlight: $select.search"></span>
+	</ui-select-choices>
+</ui-select>
