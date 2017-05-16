@@ -1,4 +1,4 @@
-<ui-select ng-model="selected" theme="selectize" style="width: 300px;" title="Choose a website">
+<ui-select ng-model="selectedWebsite" theme="selectize" style="width: 300px;" title="Choose a website" on-select="getWebsite($item, $model)">
 	<ui-select-match placeholder="Search for website">{{$select.selected.url}}</ui-select-match>
 	<ui-select-choices 
 		repeat="website in websites track by $index"
@@ -8,4 +8,7 @@
 	  <span ng-bind-html="website.url | highlight: $select.search"></span>
 	</ui-select-choices>		
 </ui-select>
-{{selected}}
+<h3 ng-if="selectedWebsite">selected: <span>{{selectedWebsite.url}}</span></h3>
+<div>
+  <div ng-if="gridOptions.data" ui-grid="gridOptions" class="relatedGrid"></div>
+</div>

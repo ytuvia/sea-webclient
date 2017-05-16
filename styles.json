@@ -1,5 +1,6 @@
 [
 	"./src/css/**/*.css",
 	"./node_modules/bootstrap/dist/bootstrap.css",
-	"./node_modules/ui-select/dist/select.css"
+	"./node_modules/ui-select/dist/select.css",
+	"./node_modules/angular-ui-grid/ui-grid.css"
 ]

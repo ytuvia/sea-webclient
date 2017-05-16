@@ -1,4 +1,4 @@
-angular.module('seoaiApp', ['ngRoute', 'ui.select', 'ngSanitize'])
+angular.module('seoaiApp', ['ngRoute', 'ui.select', 'ui.grid', 'ngSanitize'])
 .config([
 	'$routeProvider',
 	function($routeProvider){

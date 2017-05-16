@@ -12,6 +12,7 @@
     "angular": "^1.6.4",
     "angular-route": "^1.6.4",
     "angular-sanitize": "^1.6.4",
+    "angular-ui-grid": "^4.0.4",
     "ui-select": "^0.19.8"
   },
   "devDependencies": {
